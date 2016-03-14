@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+    <title>Ajax. Kurs od podstaw. Część pierwsza: Wprowadzenie. Przykład #4.2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+    .tresc {
+        width:400px;
+        border: 5px double blue;
+        padding: 10px;
+        background: #e8fff1;        
+        margin: 10px;
+    }
+    .minitresc {
+        display: none;
+        padding: 5px;
+    }
+    a {
+        width: 20px;
+        font-family: "Calibri", monospace;
+        text-decoration: none;
+    }
+    </style>
+    
+<script type="text/javascript">
+ /*
+ Zmieniłem ramke na podwojna w kolorze niebieski o rozmiarze 5 pikseli
+ */
+
+function expandCollapse(Id)
+{
+    var n = Id.parentNode.childNodes[2];
+    if (n.style.display == 'block') {
+        n.style.display = 'none';        
+        Id.innerHTML = '+';
+    } else {
+        n.style.display = 'block';                
+        n.innerHTML = 'Patryk Szuba';
+        Id.innerHTML = '-';        
+    }
+}
+
+</script>    
+    
+    
+  </head>
+<body>
+
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Pojemnik na treść</span><div></div></div>
+
+</body>
+</html>
